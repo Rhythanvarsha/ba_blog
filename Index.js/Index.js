@@ -8,14 +8,14 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-  origin: 'http://localhost:3000', // Allow requests from React app running on port 3000
+  origin: 'http://localhost:3000', 
   credentials: true
 }));
 
-app.use(express.json()); // Middleware to parse incoming JSON requests
+app.use(express.json());
 
-// Connect to MongoDB
-mongoose.connect('mongodb://localhost:27017/', {
+// 'mongodb://localhost:27017/Main_Blog',
+mongoose.connect('mongodb://localhost:27017/Main_Blog', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
 }).then(() => console.log('Connected to MongoDB'))

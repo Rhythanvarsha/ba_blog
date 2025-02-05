@@ -9,6 +9,8 @@ const app = express();
 app.use(cors({ origin: 'http://localhost:3000', credentials: true }));
 app.use(express.json());
 
+
+// process.env.MONGO_URI,
 mongoose.connect('mongodb://127.0.0.1:27017/Main_Blog', {
   useNewUrlParser: true,
   useUnifiedTopology: true,
