@@ -82,3 +82,15 @@ app.post('/login', async (req, res) => {
 app.listen(4000, () => {
   console.log('Server is running on http://localhost:4000');
 });
+
+
+
+// Handle MongoDB connection error
+mongoose.connection.on('error', err => {
+  console.error('MongoDB connection error:', err);
+});
+
+// Handle MongoDB connection success
+mongoose.connection.once('open', () => {
+  console.log('Connected to MongoDB successfully');
+});
