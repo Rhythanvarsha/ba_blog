@@ -2,11 +2,11 @@
   "name": "fullstackapp-api",
   "version": "1.0.0",
   "description": "Backend for FullStackApp",
-  "main": "Index.js",
+  "main": "index.js",
   "scripts": {
-  "start": "node Index.js/Index.js",
-  "dev": "nodemon Index.js/Index.js"
-},
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
