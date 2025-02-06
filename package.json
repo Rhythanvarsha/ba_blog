@@ -4,9 +4,9 @@
   "description": "Backend for FullStackApp",
   "main": "Index.js",
   "scripts": {
-    "start": "node Index.js",
-    "dev": "nodemon Index.js"
-  },
+  "start": "node Index.js/Index.js",
+  "dev": "nodemon Index.js/Index.js"
+},
   "dependencies": {
     "bcrypt": "^5.0.1",
     "cors": "^2.8.5",
