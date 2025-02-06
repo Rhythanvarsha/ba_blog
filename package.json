@@ -2,9 +2,10 @@
   "name": "fullstackapp-api",
   "version": "1.0.0",
   "description": "Backend for FullStackApp",
-  "main": "index.js",
+  "main": "Index.js",
   "scripts": {
-    "start": "node index.js"
+    "start": "node Index.js",
+    "dev": "nodemon Index.js"
   },
   "dependencies": {
     "bcrypt": "^5.0.1",
@@ -13,7 +14,7 @@
     "mongoose": "^6.0.12"
   },
   "engines": {
-    "node": ">=14.0.0"
+    "node": "14.x"
   },
   "author": "",
   "license": "ISC"
